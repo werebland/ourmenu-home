@@ -3,24 +3,15 @@ import Head from 'next/head'
 import Router from 'next/router'
 import styled from 'styled-components';
 import {
-  height,
-  width,
   space,
   display,
-  alignItems,
-  justifyContent,
-  flexDirection,
   typography,
   color,
-  minHeight,
-  maxWidth,
   border,
-  borderRight,
-  borderRadius,
-  flex,
   flexbox,
   grid,
   layout,
+  background,
 } from 'styled-system'
 
 import Nav from '../components/Nav'
@@ -29,21 +20,17 @@ const HeroSection = styled.section(
   {
     boxSizing: 'border-box',
   },
-  height,
-  width,
+  layout,
   space,
   display,
-  justifyContent,
-  alignItems,
-  flexDirection,
+  flexbox,
 );
 
 const HeroContent = styled.div(
   {},
   display,
-  flexDirection,
-  alignItems,
-  maxWidth,
+  flexbox,
+  layout,
 );
 
 const HeroTitle = styled.h1(
@@ -92,14 +79,11 @@ const HeroCTAInput = styled.input(
     boxSizing: 'border-box'
   },
   border,
-  borderRight,
-  borderRadius,
-  flex,
+  flexbox,
   space,
   typography,
   color,
   display,
-  flex,
 );
 
 const HeroCTAButton = styled.input(
@@ -113,8 +97,7 @@ const HeroCTAButton = styled.input(
     }
   },
   border,
-  borderRadius,
-  flex,
+  flexbox,
   space,
   typography,
   color,
@@ -127,7 +110,7 @@ const HeroCTACaption = styled.span(
   typography,
   color,
   display,
-  width,
+  layout,
 );
 
 const Hero = ({ email, handleSubmit, handleChange }) => (
@@ -263,7 +246,7 @@ const GridItem = styled.article(
     boxSizing: 'border-box',
   },
   display,
-  height,
+  layout,
   space,
   grid,
   color,
@@ -277,6 +260,7 @@ const GridShowcase = styled.div(
   space,
   display,
   flexbox,
+  background,
 );
 
 const GridContent = styled.div(
@@ -317,7 +301,7 @@ const GridItemButton = styled.a(
   flexbox,
   space,
   typography,
-  height,
+  layout,
 );
 
 class Index extends Component {
@@ -351,6 +335,7 @@ class Index extends Component {
               alignItems="center"
               justifyContent="center"
               flexDirection="column"
+              p={['16px', '56px']}
             >
               <CalloutTitle
                 fontSize="2rem"
@@ -377,7 +362,7 @@ class Index extends Component {
             <Grid>
               <GridItem
                 display="grid"
-                gridTemplateColumns={["1fr", "352px 1fr"]}
+                gridTemplateColumns={["1fr", "1fr", "1fr", "352px 1fr"]}
                 gridGap={["16px", "56px"]}
                 p={['16px', '56px']}
                 height="100%"
@@ -420,6 +405,7 @@ class Index extends Component {
                 display="flex"
                 flexDirection="column"
                 justifyContent="space-between"
+                alignItems="flex-start"
                 mr={["16px", '56px']}
                 >
                   <div>
@@ -468,15 +454,15 @@ class Index extends Component {
               </GridItem>
               <GridItem
                 display="grid"
-                gridTemplateColumns={["100%", "50% 50%"]}
+                gridTemplateColumns={["1fr", "1fr", "1fr", "1fr 1fr"]}
                 gridGap={["16px", "56px"]}
                 p={['16px', '56px']}
-                height="100vh"
               >
                 <GridContent
                 display="flex"
                 flexDirection="column"
                 justifyContent="space-between"
+                alignItems="flex-start"
                 mr={["16px", '56px']}
                 >
                   <div>
@@ -524,15 +510,17 @@ class Index extends Component {
                 </GridContent>
                 <GridShowcase
                   bg="black"
-                  mr={["16px", '56px']}
-                >
-                  Showcase
-                </GridShowcase>
-
+                  minHeight="360px"
+                  height="100%"
+                  display="block"
+                  backgroundImage="url(/static/ourmenu-growth.png)"
+                  backgroundSize="cover"
+                  backgroundPosition="center"
+                />
               </GridItem>
               <GridItem
                 display="grid"
-                gridTemplateColumns={["100%", "50% 50%"]}
+                gridTemplateColumns={["1fr", "1fr", "1fr", "1fr 1fr"]}
                 gridGap={["16px", "56px"]}
                 p={['16px', '56px']}
                 bg="black"
@@ -545,7 +533,7 @@ class Index extends Component {
                 display="flex"
                 flexDirection="column"
                 justifyContent="space-between"
-                mr={["16px", '56px']}
+                alignItems="flex-start"
                 >
                   <div>
                     <GridItemTitle

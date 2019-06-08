@@ -80,9 +80,9 @@ const Contact = ({}) => (
         color="white"
         m="0"
       >
-        We'll do all the hard stuff.
+        We'd love to meet you.
         <br/>
-        You sit back and relax.
+        And buy you a beer.
       </PageTitle>
     </PageHeader>
   </PageWrapper>

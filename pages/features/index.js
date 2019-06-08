@@ -68,6 +68,7 @@ const WidgetOverview = styled.div(
   layout,
   background,
   border,
+  space,
 );
 
 const FeatureList = styled.ul(
@@ -151,7 +152,7 @@ class Features extends Component {
         </PageHeader>
         <PageGrid
           display="grid"
-          gridTemplateColumns={['1fr', '360px 1fr']}
+          gridTemplateColumns={['1fr', '1fr', '360px 1fr']}
           gridGap={['16px', '56px']}
           p={['16px', '24px', '56px']}
         >
@@ -163,6 +164,7 @@ class Features extends Component {
             backgroundSize="cover"
             backgroundPosition="center"
             borderRadius="8px"
+            m="auto"
           />
           <PageContent>
             <PageSubtitle

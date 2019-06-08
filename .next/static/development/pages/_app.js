@@ -12947,7 +12947,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/Chris/ourmenu-landing/pages/_app.js";
+var _jsxFileName = "/Users/Chris/ourmenu-home/pages/_app.js";
 
 function _templateObject() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_8__["default"])(["\n  body {\n    padding: 0;\n    margin: 0;\n    font-family: 'Source Sans Pro', sans-serif;\n  }\n"]);
