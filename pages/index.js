@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Link from 'next/link'
 import Head from 'next/head'
 import Router from 'next/router'
 import styled from 'styled-components';
@@ -15,6 +16,7 @@ import {
 } from 'styled-system'
 
 import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 
 const HeroSection = styled.section(
   {
@@ -35,6 +37,7 @@ const HeroContent = styled.div(
 
 const HeroTitle = styled.h1(
   {
+    textAlign: 'center',
     '& strong': {
       position: 'relative',
     },
@@ -115,9 +118,10 @@ const HeroCTACaption = styled.span(
 
 const Hero = ({ email, handleSubmit, handleChange }) => (
   <HeroSection
-    height="100vh"
+    height="100%"
+    minHeight="100vh"
     width="100vw"
-    pt="128px"
+    pt="196px"
     p={['128px 16px 16px', '128px 24px 24px', '128px 56px 56px']}
     display="flex"
     alignItems="center"
@@ -250,6 +254,7 @@ const GridItem = styled.article(
   space,
   grid,
   color,
+  flexbox,
 );
 
 const GridShowcase = styled.div(
@@ -265,6 +270,7 @@ const GridShowcase = styled.div(
 
 const GridContent = styled.div(
   {},
+  layout,
   display,
   flexbox,
   space,
@@ -289,6 +295,8 @@ const GridItemText = styled.p(
 const GridItemButton = styled.a(
   {
     float: "left",
+    cursor: 'pointer',
+    textDecoration: 'none',
     transition: 'background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
     ':hover': {
       background: 'white',
@@ -323,6 +331,15 @@ class Index extends Component {
           <Head>
             <title>Menu management that fuels growth | OurMenu</title>
             <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86" />
+            <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png"/>
+            <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png"/>
+            <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png"/>
+            <link rel="manifest" href="/static/site.webmanifest"/>
+            <link rel="mask-icon" href="/static/safari-pinned-tab.svg" color="#000"/>
+            <link rel="shortcut icon" href="/static/favicon.ico"/>
+            <meta name="msapplication-TileColor" content="#000000"/>
+            <meta name="msapplication-config" content="/static/browserconfig.xml"/>
+            <meta name="theme-color" content="#000"/>
           </Head>
             <Nav />
             <Hero
@@ -384,11 +401,11 @@ class Index extends Component {
                                   <rect id="Rectangle" fill="#FFFFFF" x="256" y="92" width="64" height="64" rx="8"></rect>
                                   <g id="round-restaurant_menu-24px" transform="translate(270.000000, 106.000000)">
                                       <polygon id="Shape" points="0 0 36 0 36 36 0 36"></polygon>
-                                      <path d="M10.5591933,20.251507 L15.3425191,15.4681811 L4.88005023,5.02261444 C4.06874408,4.21130829 2.66586053,4.43103704 2.15879419,5.47897415 C0.958737171,7.99740367 1.39819467,11.0905084 3.47716668,13.1863826 L10.5591933,20.251507 Z M22.0188927,17.1922067 C24.604931,18.3922637 28.2389065,17.5471532 30.9263581,14.8597015 C34.1546805,11.6313791 34.7800623,7.00017319 32.2954373,4.5155481 C29.8277144,2.04782522 25.1965084,2.65630484 21.9512838,5.88462723 C19.2638322,8.57207886 18.4187216,12.2060543 19.6187786,14.7920927 L4.30537504,30.1054963 C3.6461888,30.7646825 3.6461888,31.8295219 4.30537504,32.4887081 C4.96456129,33.1478944 6.02940062,33.1478944 6.68858686,32.4887081 L17.1510558,22.0600436 L27.5966225,32.5056103 C28.2558087,33.1647966 29.320648,33.1647966 29.9798343,32.5056103 C30.6390205,31.8464241 30.6390205,30.7815847 29.9798343,30.1223985 L19.5342676,19.6768318 L22.0188927,17.1922067 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                                      <path d="M10.5591933,20.251507 L15.3425191,15.4681811 L4.88005023,5.02261444 C4.06874408,4.21130829 2.66586053,4.43103704 2.15879419,5.47897415 C0.958737171,7.99740367 1.39819467,11.0905084 3.47716668,13.1863826 L10.5591933,20.251507 Z M22.0188927,17.1922067 C24.604931,18.3922637 28.2389065,17.5471532 30.9263581,14.8597015 C34.1546805,11.6313791 34.7800623,7.00017319 32.2954373,4.5155481 C29.8277144,2.04782522 25.1965084,2.65630484 21.9512838,5.88462723 C19.2638322,8.57207886 18.4187216,12.2060543 19.6187786,14.7920927 L4.30537504,30.1054963 C3.6461888,30.7646825 3.6461888,31.8295219 4.30537504,32.4887081 C4.96456129,33.1478944 6.02940062,33.1478944 6.68858686,32.4887081 L17.1510558,22.0600436 L27.5966225,32.5056103 C28.2558087,33.1647966 29.320648,33.1647966 29.9798343,32.5056103 C30.6390205,31.8464241 30.6390205,30.7815847 29.9798343,30.1223985 L19.5342676,19.6768318 L22.0188927,17.1922067 Z" id="Shape" fill="#000000" fillRule="nonzero"></path>
                                   </g>
                                   <g id="Group">
                                       <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="320" height="76" rx="8"></rect>
-                                      <text id="Thank-you-for-visiti" fontFamily="SourceSansPro-Regular, Source Sans Pro" fontSize="18" fontWeight="normal" lineSpacing="22" fill="#000E1A">
+                                      <text id="Thank-you-for-visiti" fontFamily="SourceSansPro-Regular, Source Sans Pro" fontSize="18" fontWeight="normal" fill="#000E1A">
                                           <tspan x="16" y="34">Thank you for visiting Darcia. Please </tspan>
                                           <tspan x="16" y="56">take a look at our menu below</tspan>
                                           <tspan x="242.188" y="55.838" fontFamily="SourceSansPro-Bold, Source Sans Pro" fontWeight="bold"> </tspan>
@@ -434,22 +451,26 @@ class Index extends Component {
                     While diners search, interact, and convert, you gain valuable insights into their activity and how your menu performs.
                     </GridItemText>
                   </div>
-                  <GridItemButton
-                    border="2px solid black"
-                    borderColor="black"
-                    borderRadius="8px"
-                    p="16px 48px"
-                    display="flex"
-                    flexGrow="0"
-                    alignItems="center"
-                    justifyContent="center"
-                    bg="blue"
-                    color="black"
-                    fontSize="1.5rem"
-                    fontWeight="bold"
+                  <Link
+                    href="/request-demo"
                   >
-                    Get a custom demo
-                  </GridItemButton>
+                    <GridItemButton
+                      border="2px solid black"
+                      borderColor="black"
+                      borderRadius="8px"
+                      p="16px 48px"
+                      display="flex"
+                      flexGrow="0"
+                      alignItems="center"
+                      justifyContent="center"
+                      bg="blue"
+                      color="black"
+                      fontSize="1.5rem"
+                      fontWeight="bold"
+                    >
+                      Get a custom demo
+                    </GridItemButton>
+                  </Link>
                 </GridContent>
               </GridItem>
               <GridItem
@@ -491,22 +512,24 @@ class Index extends Component {
                     Target and engage diners right on your website with the OurMenu widget. Retain and grow your customer base with intelligent insights and social media integrations. All of this provided with our signature silver service approach makes OurMenu the perfect partner to drive your restaurant’s growth.
                     </GridItemText>
                   </div>
-                  <GridItemButton
-                    border="2px solid black"
-                    borderColor="black"
-                    borderRadius="8px"
-                    p="16px 48px"
-                    display="flex"
-                    flexGrow="0"
-                    alignItems="center"
-                    justifyContent="center"
-                    bg="blue"
-                    color="black"
-                    fontSize="1.5rem"
-                    fontWeight="bold"
-                  >
-                    Get a custom demo
-                  </GridItemButton>
+                  <Link href="/features">
+                    <GridItemButton
+                      border="2px solid black"
+                      borderColor="black"
+                      borderRadius="8px"
+                      p="16px 48px"
+                      display="flex"
+                      flexGrow="0"
+                      alignItems="center"
+                      justifyContent="center"
+                      bg="blue"
+                      color="black"
+                      fontSize="1.5rem"
+                      fontWeight="bold"
+                    >
+                      See what sets us apart
+                    </GridItemButton>
+                  </Link>
                 </GridContent>
                 <GridShowcase
                   bg="black"
@@ -519,21 +542,17 @@ class Index extends Component {
                 />
               </GridItem>
               <GridItem
-                display="grid"
-                gridTemplateColumns={["1fr", "1fr", "1fr", "1fr 1fr"]}
-                gridGap={["16px", "56px"]}
+                display="flex"
+                justifyContent="center"
                 p={['16px', '56px']}
                 bg="black"
-                height="100vh"
               >
-                <GridShowcase>
-                  Showcase
-                </GridShowcase>
                 <GridContent
                 display="flex"
                 flexDirection="column"
                 justifyContent="space-between"
                 alignItems="flex-start"
+                width="50%"
                 >
                   <div>
                     <GridItemTitle
@@ -553,7 +572,7 @@ class Index extends Component {
                       lineHeight="1.5rem"
                       p="0"
                       m="0"
-                      mb="24px"
+                      mb="48px"
                     >
                     We are invested in your long-term growth. To accomplish this, we get to know every restaurant personally and understand their unique goals. Communication is key, so whether it’s a feature request, support ticket, or adding a special to your menu, we’re available over email, phone, text, Messenger, WhatsApp, and our hologram is coming soon.
                     </GridItemText>
@@ -572,12 +591,14 @@ class Index extends Component {
                     color="white"
                     fontSize="1.5rem"
                     fontWeight="bold"
+                    href="mailto:hello@ourmenu.co"
                   >
                     See how fast we are
                   </GridItemButton>
                 </GridContent>
               </GridItem>
             </Grid>
+            <Footer />
         </div>
     );
   }

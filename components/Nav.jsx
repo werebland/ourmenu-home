@@ -26,6 +26,34 @@ const NavWrapper = styled.div(
   display,
 );
 
+const Alert = styled.div(
+  {
+    boxSizing: 'border-box'
+  },
+  layout,
+  display,
+  flexbox,
+  typography,
+  color,
+  space,
+  position,
+);
+
+const AlertText = styled.span(
+  {},
+  typography,
+  color,
+  space
+);
+
+const AlertAction = styled.a(
+  {
+    cursor: 'pointer'
+  },
+  typography,
+  color,
+);
+
 const NavBar = styled.div(
   {
     boxSizing: 'border-box',
@@ -50,7 +78,8 @@ const NavBrand = styled.div(
 const NavLinks = styled.div(
   {},
   display,
-  flexbox
+  flexbox,
+  layout,
 );
 
 const NavLink = styled.a(
@@ -90,6 +119,7 @@ const NavCTAContainer = styled.form(
     boxSizing: 'border-box'
   },
   display,
+  flexbox,
   layout,
   space,
 );
@@ -125,20 +155,6 @@ const NavCTAButton = styled.input(
 );
 
 const NavToggle = styled.div(
-  {
-    '& .nav-hamburger div span': {
-      borderRadius: '1px !important',
-      backgroundColor: '#000e1a',
-    },
-    '& .nav-hamburger div span:before': {
-      borderRadius: '1px !important',
-      backgroundColor: '#000e1a',
-    },
-    '& .nav-hamburger div span:after': {
-      borderRadius: '1px !important',
-      backgroundColor: '#000e1a',
-    },
-  },
   layout,
   border,
   display,
@@ -147,6 +163,23 @@ const NavToggle = styled.div(
   space,
   color,
 );
+
+const StyledHamburger = styled(HamburgerSpin)`
+  & div span {
+    border-radius: 1px !important;
+    background-color: ${props => props.color};
+  }
+
+  & div span::before {
+    border-radius: 1px !important;
+    background-color: ${props => props.color};
+  }
+
+  & div span::after {
+    border-radius: 1px !important;
+    background-color: ${props => props.color};
+  }
+`;
 
 class Nav extends Component {
   constructor(props) {
@@ -169,6 +202,36 @@ class Nav extends Component {
         width="100vw"
         zIndex="8"
       >
+        <Alert
+          width="100%"
+          height="48px"
+          bg="black"
+          color="white"
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          pl={['16px', '24px', '56px']}
+          pr={['16px', '24px', '56px']}
+          position="relative"
+          zIndex="8"
+        >
+          <AlertText
+            fontSize="1rem"
+            fontWeight="bold"
+            mr="16px"
+          >
+            We're in Halifax. Let us buy you a beer.
+          </AlertText>
+          <Link href="/contact">
+            <AlertAction
+              fontSize="1rem"
+              fontWeight="bold"
+              color="blue"
+            >
+              Contact us
+            </AlertAction>
+          </Link>
+        </Alert>
         <NavBar
           position="relative"
           zIndex='88'
@@ -298,8 +361,9 @@ class Nav extends Component {
               display="flex"
               zIndex="88"
             >
-              <HamburgerSpin
+              <StyledHamburger
                 className="nav-hamburger"
+                color={this.props.inverted ? 'white' : 'black'}
                 isActive={this.state.isOpen}
                 buttonWidth={32}
                 toggleButton={() => this.setState({ isOpen: !this.state.isOpen})}/>
@@ -315,12 +379,100 @@ class Nav extends Component {
                 width="100vw"
                 height="100vh"
                 zIndex="16"
-                bg="#fff"
+                bg={this.props.inverted ? 'black' : this.props.transparent ? 'blue' : 'white'}
                 display="flex"
                 flexDirection="column nowrap"
                 opacity="1"
               >
-                Overlay
+                <NavLinks
+                  display="flex"
+                  flexDirection="column"
+                  alignItems="center"
+                  width="100%"
+                >
+                  <Link
+                    href="/features"
+                  >
+                    <NavLink
+                      display="inline-flex"
+                      color={this.props.inverted ? 'white' : 'black'}
+                      fontWeight="bold"
+                      fontSize="2rem"
+                      mb="24px"
+                    >
+                      Features
+                    </NavLink>
+                  </Link>
+                  <Link
+                    href="/pricing"
+                  >
+                    <NavLink
+                      display="inline-flex"
+                      color={this.props.inverted ? 'white' : 'black'}
+                      fontWeight="bold"
+                      fontSize="2rem"
+                      mb="24px"
+                    >
+                      Pricing
+                    </NavLink>
+                  </Link>
+                  <Link
+                    href="/onboard"
+                  >
+                    <NavLink
+                      display="inline-flex"
+                      color={this.props.inverted ? 'white' : 'black'}
+                      fontWeight="bold"
+                      fontSize="2rem"
+                      mb="24px"
+                    >
+                      Upload your menu
+                    </NavLink>
+                  </Link>
+                  <Link
+                    href="/contact"
+                  >
+                    <NavLink
+                      display="inline-flex"
+                      color={this.props.inverted ? 'white' : 'black'}
+                      fontWeight="bold"
+                      fontSize="2rem"
+                      mb="24px"
+                    >
+                      Contact
+                    </NavLink>
+                  </Link>
+                  <NavCTAContainer
+                    display="inline-flex"
+                    flexDirection="column"
+                    onSubmit={(e) => this.handleSubmit(e)}>
+                    <NavCTAInput
+                      type="email"
+                      placeholder="Your email"
+                      border="2px solid black"
+                      borderRadius='4px'
+                      p="8px 16px"
+                      mb="8px"
+                      fontSize="1rem"
+                      fontWeight="regular"
+                      color="black"
+                      required
+                      value={this.state.email}
+                      onChange={(e) => this.setState({ email: e.target.value })}
+                    />
+                    <NavCTAButton
+                      border="2px solid black"
+                      borderRadius='4px'
+                      p="8px 16px"
+                      fontSize="1rem"
+                      fontWeight="bold"
+                      color="black"
+                      bg="blue"
+                      value="Request a demo"
+                      type="submit"
+                      />
+                  </NavCTAContainer>
+                </NavLinks>
               </NavOverlay>
             </NavSled>
           }

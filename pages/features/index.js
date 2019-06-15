@@ -16,6 +16,7 @@ import {
 } from 'styled-system'
 
 import Nav from '../../components/Nav'
+import Footer from '../../components/Footer'
 
 const PageWrapper = styled.div`
 
@@ -124,6 +125,16 @@ class Features extends Component {
           <title>
             Powerful features for your restaurant's menu | OurMenu
           </title>
+          <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png"/>
+          <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png"/>
+          <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png"/>
+          <link rel="manifest" href="/static/site.webmanifest"/>
+          <link rel="mask-icon" href="/static/safari-pinned-tab.svg" color="#000"/>
+          <link rel="shortcut icon" href="/static/favicon.ico"/>
+          <meta name="msapplication-TileColor" content="#000000"/>
+          <meta name="msapplication-config" content="/static/browserconfig.xml"/>
+          <meta name="theme-color" content="#000"/>
         </Head>
         <Nav inverted/>
         <PageHeader
@@ -131,7 +142,7 @@ class Features extends Component {
           minHeight="50vh"
           bg="black"
           color="white"
-          pt="128px"
+          pt="196px"
           pl={['16px', '24px', '56px']}
           pr={['16px', '24px', '56px']}
           pb={['16px', '24px', '56px']}
@@ -330,6 +341,7 @@ class Features extends Component {
           </PageContent>
 
         </PageGrid>
+        <Footer />
       </PageWrapper>
     );
   }
