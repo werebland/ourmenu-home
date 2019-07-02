@@ -211,17 +211,17 @@ class Features extends Component {
                   position="relative"
                   display="inline-flex"
                 >
-                  Customizable
+                  Purposeful
                 </FeatureListItemTitle>
                 <FeatureListItemContent
-                  fontSize="1.5rem"
+                  fontSize="1.125rem"
                   fontWeight="regular"
                   color="black"
                   p="0"
                   m="0"
                   display="inline-flex"
                 >
-                  Customize
+                  Every day, hungry diners are looking at your menu, waiting to be converted. OurMenu gives you the perfect tools and expertise to make this happen. Target and engage diners right on your website with the OurMenu widget. Retain and grow your customer base with intelligent insights and social media integrations. All of this provided with our signature silver service approach makes OurMenu the perfect partner to drive your restaurant’s growth.
                 </FeatureListItemContent>
               </FeatureListItem>
               <FeatureListItem
@@ -239,17 +239,17 @@ class Features extends Component {
                   position="relative"
                   display="inline-flex"
                 >
-                  Intelligent
+                  Customizable
                 </FeatureListItemTitle>
                 <FeatureListItemContent
-                  fontSize="1.5rem"
+                  fontSize="1.125rem"
                   fontWeight="regular"
                   color="black"
                   p="0"
                   m="0"
                   display="inline-flex"
                 >
-                  Customize
+                  Your restaurant has its own personality and business needs. Embrace it with OurMenu. Add beautiful imagery to make your widget your own. Focus on the conversion actions that matter to you. Integrate your social channels to keep diners in the loop. OurMenu is its most powerful when it’s customized to your needs.
                 </FeatureListItemContent>
               </FeatureListItem>
               <FeatureListItem
@@ -270,42 +270,14 @@ class Features extends Component {
                   Social
                 </FeatureListItemTitle>
                 <FeatureListItemContent
-                  fontSize="1.5rem"
+                  fontSize="1.125rem"
                   fontWeight="regular"
                   color="black"
                   p="0"
                   m="0"
                   display="inline-flex"
                 >
-                  Customize
-                </FeatureListItemContent>
-              </FeatureListItem>
-              <FeatureListItem
-                display="inline-flex"
-                flexDirection="column"
-                alignItems="flex-start"
-                mb="16px"
-              >
-                <FeatureListItemTitle
-                  fontSize="2rem"
-                  fontWeight="bold"
-                  color="black"
-                  m="0"
-                  mb="8px"
-                  position="relative"
-                  display="inline-flex"
-                >
-                  Interactive
-                </FeatureListItemTitle>
-                <FeatureListItemContent
-                  fontSize="1.5rem"
-                  fontWeight="regular"
-                  color="black"
-                  p="0"
-                  m="0"
-                  display="inline-flex"
-                >
-                  Customize
+                  OurMenu is built from the ground up with social sharing in mind. Help your diners spread the word by allowing them to share rich snippets of your menu and dishes. Optimized for Facebook and Twitter, helping you put your best foot forward.
                 </FeatureListItemContent>
               </FeatureListItem>
               <FeatureListItem
@@ -326,20 +298,18 @@ class Features extends Component {
                   Insightful
                 </FeatureListItemTitle>
                 <FeatureListItemContent
-                  fontSize="1.5rem"
+                  fontSize="1.125rem"
                   fontWeight="regular"
                   color="black"
                   p="0"
                   m="0"
                   display="inline-flex"
                 >
-                  Customize
+                  By having your menu ready to be interacted with right on your homepage, OurMenu can provide valuable analytics like never before. Track directions, phone calls, and social shares. Learn what works best for your diners to build loyalty and grow your business.
                 </FeatureListItemContent>
               </FeatureListItem>
-
             </FeatureList>
           </PageContent>
-
         </PageGrid>
         <Footer />
       </PageWrapper>

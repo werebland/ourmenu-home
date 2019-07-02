@@ -15,15 +15,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
+    "/features": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/onboard": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/request-demo": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
