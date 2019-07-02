@@ -334,6 +334,7 @@ class Nav extends Component {
                 placeholder="Your email"
                 border="2px solid black"
                 borderRadius='4px 0 0 4px'
+                m="0"
                 p="8px 16px"
                 fontSize="1rem"
                 fontWeight="regular"
@@ -347,6 +348,7 @@ class Nav extends Component {
                 border="2px solid black"
                 borderRadius='0 4px 4px 0'
                 p="8px 16px"
+                m="0"
                 fontSize="1rem"
                 fontWeight="bold"
                 color="black"

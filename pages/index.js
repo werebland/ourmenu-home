@@ -168,6 +168,7 @@ const Hero = ({ email, handleSubmit, handleChange }) => (
           fontWeight="regular"
           color="black"
           borderRight={['2px solid', '0', '0']}
+          m="0"
           mb={['16px', 0, 0]}
           display="flex"
           flex="1"
@@ -179,6 +180,7 @@ const Hero = ({ email, handleSubmit, handleChange }) => (
           border="2px solid black"
           borderRadius={['8px', '0 8px 8px 0', '0 8px 8px 0']}
           p="16px 24px"
+          m="0"
           fontSize="1.5rem"
           fontWeight="bold"
           color="black"

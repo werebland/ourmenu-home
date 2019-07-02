@@ -712,6 +712,7 @@ function (_Component) {
         placeholder: "Your email",
         border: "2px solid black",
         borderRadius: "4px 0 0 4px",
+        m: "0",
         p: "8px 16px",
         fontSize: "1rem",
         fontWeight: "regular",
@@ -733,6 +734,7 @@ function (_Component) {
         border: "2px solid black",
         borderRadius: "0 4px 4px 0",
         p: "8px 16px",
+        m: "0",
         fontSize: "1rem",
         fontWeight: "bold",
         color: "black",
@@ -741,14 +743,14 @@ function (_Component) {
         type: "submit",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 346
+          lineNumber: 347
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_responsive__WEBPACK_IMPORTED_MODULE_11___default.a, {
         maxWidth: '64em',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 359
+          lineNumber: 361
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(NavToggle, {
@@ -756,7 +758,7 @@ function (_Component) {
         zIndex: "88",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 360
+          lineNumber: 362
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(StyledHamburger, {
@@ -771,20 +773,20 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 364
+          lineNumber: 366
         },
         __self: this
       }))))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_pose__WEBPACK_IMPORTED_MODULE_10__["PoseGroup"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 374
+          lineNumber: 376
         },
         __self: this
       }, this.state.isOpen && react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(NavSled, {
         key: "0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 376
+          lineNumber: 378
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(NavOverlay, {
@@ -798,7 +800,7 @@ function (_Component) {
         opacity: "1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 377
+          lineNumber: 379
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(NavLinks, {
@@ -808,14 +810,14 @@ function (_Component) {
         width: "100%",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 387
+          lineNumber: 389
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
         href: "/features",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 393
+          lineNumber: 395
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(NavLink, {
@@ -826,14 +828,14 @@ function (_Component) {
         mb: "24px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 396
+          lineNumber: 398
         },
         __self: this
       }, "Features")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
         href: "/pricing",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 406
+          lineNumber: 408
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(NavLink, {
@@ -844,14 +846,14 @@ function (_Component) {
         mb: "24px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 409
+          lineNumber: 411
         },
         __self: this
       }, "Pricing")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
         href: "/onboard",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 419
+          lineNumber: 421
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(NavLink, {
@@ -862,14 +864,14 @@ function (_Component) {
         mb: "24px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 422
+          lineNumber: 424
         },
         __self: this
       }, "Upload your menu")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
         href: "/contact",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 432
+          lineNumber: 434
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(NavLink, {
@@ -880,7 +882,7 @@ function (_Component) {
         mb: "24px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 435
+          lineNumber: 437
         },
         __self: this
       }, "Contact")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(NavCTAContainer, {
@@ -891,7 +893,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 445
+          lineNumber: 447
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(NavCTAInput, {
@@ -913,7 +915,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 449
+          lineNumber: 451
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(NavCTAButton, {
@@ -928,7 +930,7 @@ function (_Component) {
         type: "submit",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 463
+          lineNumber: 465
         },
         __self: this
       })))))));
@@ -1913,6 +1915,7 @@ var Hero = function Hero(_ref) {
     fontWeight: "regular",
     color: "black",
     borderRight: ['2px solid', '0', '0'],
+    m: "0",
     mb: ['16px', 0, 0],
     display: "flex",
     flex: "1",
@@ -1930,6 +1933,7 @@ var Hero = function Hero(_ref) {
     border: "2px solid black",
     borderRadius: ['8px', '0 8px 8px 0', '0 8px 8px 0'],
     p: "16px 24px",
+    m: "0",
     fontSize: "1.5rem",
     fontWeight: "bold",
     color: "black",
@@ -1938,7 +1942,7 @@ var Hero = function Hero(_ref) {
     type: "submit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 178
+      lineNumber: 179
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(HeroCTACaption, {
@@ -1949,7 +1953,7 @@ var Hero = function Hero(_ref) {
     display: "block",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 190
+      lineNumber: 192
     },
     __self: this
   }, "14-day free trial \xB7 Custom setup \xB7 Cancel anytime")));
@@ -2061,19 +2065,19 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 330
+          lineNumber: 332
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_8___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 331
+          lineNumber: 333
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("title", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 332
+          lineNumber: 334
         },
         __self: this
       }, "Menu management that fuels growth | OurMenu"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("meta", {
@@ -2081,7 +2085,7 @@ function (_Component) {
         content: "width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 333
+          lineNumber: 335
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("link", {
@@ -2090,7 +2094,7 @@ function (_Component) {
         href: "/static/apple-touch-icon.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 334
+          lineNumber: 336
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("link", {
@@ -2100,7 +2104,7 @@ function (_Component) {
         href: "/static/favicon-32x32.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 335
+          lineNumber: 337
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("link", {
@@ -2110,7 +2114,7 @@ function (_Component) {
         href: "/static/favicon-16x16.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 336
+          lineNumber: 338
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("link", {
@@ -2118,7 +2122,7 @@ function (_Component) {
         href: "/static/site.webmanifest",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 337
+          lineNumber: 339
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("link", {
@@ -2127,7 +2131,7 @@ function (_Component) {
         color: "#000",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 338
+          lineNumber: 340
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("link", {
@@ -2135,7 +2139,7 @@ function (_Component) {
         href: "/static/favicon.ico",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 339
+          lineNumber: 341
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("meta", {
@@ -2143,7 +2147,7 @@ function (_Component) {
         content: "#000000",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 340
+          lineNumber: 342
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("meta", {
@@ -2151,7 +2155,7 @@ function (_Component) {
         content: "/static/browserconfig.xml",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 341
+          lineNumber: 343
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("meta", {
@@ -2159,13 +2163,13 @@ function (_Component) {
         content: "#000",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 342
+          lineNumber: 344
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Nav__WEBPACK_IMPORTED_MODULE_12__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 344
+          lineNumber: 346
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Hero, {
@@ -2180,7 +2184,7 @@ function (_Component) {
         email: this.state.email,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 345
+          lineNumber: 347
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Callout, {
@@ -2191,7 +2195,7 @@ function (_Component) {
         p: ['16px', '56px'],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 350
+          lineNumber: 352
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(CalloutTitle, {
@@ -2202,13 +2206,13 @@ function (_Component) {
         display: "block",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 357
+          lineNumber: 359
         },
         __self: this
       }, "OurMenu is the menu management platform of tomorrow", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 365
+          lineNumber: 367
         },
         __self: this
       }), "for the restaurants of today."), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(CalloutSubtitle, {
@@ -2220,19 +2224,19 @@ function (_Component) {
         maxWidth: "540px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 368
+          lineNumber: 370
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("strong", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 376
+          lineNumber: 378
         },
         __self: this
       }, "93% of diners"), " look at a menu online. Now, they are interacting with outdated PDFs or being taken off of your site to a third party. That\u2019s sacrificing valuable opportunities for engagement and insight.")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Grid, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 379
+          lineNumber: 381
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(GridItem, {
@@ -2244,7 +2248,7 @@ function (_Component) {
         minHeight: "188px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 380
+          lineNumber: 382
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(GridShowcase, {
@@ -2257,7 +2261,7 @@ function (_Component) {
         justifyContent: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 388
+          lineNumber: 390
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
@@ -2267,7 +2271,7 @@ function (_Component) {
         version: "1.1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 397
+          lineNumber: 399
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("g", {
@@ -2278,7 +2282,7 @@ function (_Component) {
         fillRule: "evenodd",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 398
+          lineNumber: 400
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("g", {
@@ -2286,7 +2290,7 @@ function (_Component) {
         transform: "translate(-16.000000, -16.000000)",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 399
+          lineNumber: 401
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("g", {
@@ -2294,7 +2298,7 @@ function (_Component) {
         transform: "translate(16.000000, 16.000000)",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 400
+          lineNumber: 402
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("rect", {
@@ -2307,7 +2311,7 @@ function (_Component) {
         rx: "8",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 401
+          lineNumber: 403
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("g", {
@@ -2315,7 +2319,7 @@ function (_Component) {
         transform: "translate(270.000000, 106.000000)",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 402
+          lineNumber: 404
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("polygon", {
@@ -2323,7 +2327,7 @@ function (_Component) {
         points: "0 0 36 0 36 36 0 36",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 403
+          lineNumber: 405
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
@@ -2333,14 +2337,14 @@ function (_Component) {
         fillRule: "nonzero",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 404
+          lineNumber: 406
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("g", {
         id: "Group",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 406
+          lineNumber: 408
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("rect", {
@@ -2353,7 +2357,7 @@ function (_Component) {
         rx: "8",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 407
+          lineNumber: 409
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("text", {
@@ -2364,7 +2368,7 @@ function (_Component) {
         fill: "#000E1A",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 408
+          lineNumber: 410
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("tspan", {
@@ -2372,7 +2376,7 @@ function (_Component) {
         y: "34",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 409
+          lineNumber: 411
         },
         __self: this
       }, "Thank you for visiting Darcia. Please "), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("tspan", {
@@ -2380,7 +2384,7 @@ function (_Component) {
         y: "56",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 410
+          lineNumber: 412
         },
         __self: this
       }, "take a look at our menu below"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("tspan", {
@@ -2390,7 +2394,7 @@ function (_Component) {
         fontWeight: "bold",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 411
+          lineNumber: 413
         },
         __self: this
       }, " "), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("tspan", {
@@ -2399,7 +2403,7 @@ function (_Component) {
         fontFamily: "AppleColorEmoji, Apple Color Emoji",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 412
+          lineNumber: 414
         },
         __self: this
       }, "\uD83D\uDC47"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("tspan", {
@@ -2407,7 +2411,7 @@ function (_Component) {
         y: "56",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 413
+          lineNumber: 415
         },
         __self: this
       }, "!")))))))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(GridContent, {
@@ -2418,13 +2422,13 @@ function (_Component) {
         mr: ["16px", '56px'],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 421
+          lineNumber: 423
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 428
+          lineNumber: 430
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(GridItemTitle, {
@@ -2436,7 +2440,7 @@ function (_Component) {
         mb: "24px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 429
+          lineNumber: 431
         },
         __self: this
       }, "The OurMenu Widget"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(GridItemText, {
@@ -2449,26 +2453,26 @@ function (_Component) {
         mb: "24px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 439
+          lineNumber: 441
         },
         __self: this
       }, "Have diners visiting your website interacting with your menu immediately. No more digging through pages to find a plain PDF. The OurMenu widget embeds a powerful and feature-rich menu right on your homepage.", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 449
+          lineNumber: 451
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 450
+          lineNumber: 452
         },
         __self: this
       }), "While diners search, interact, and convert, you gain valuable insights into their activity and how your menu performs.")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
         href: "/request-demo",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 454
+          lineNumber: 456
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(GridItemButton, {
@@ -2486,7 +2490,7 @@ function (_Component) {
         fontWeight: "bold",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 457
+          lineNumber: 459
         },
         __self: this
       }, "Get a custom demo")))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(GridItem, {
@@ -2496,7 +2500,7 @@ function (_Component) {
         p: ['16px', '56px'],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 476
+          lineNumber: 478
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(GridContent, {
@@ -2507,13 +2511,13 @@ function (_Component) {
         mr: ["16px", '56px'],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 482
+          lineNumber: 484
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 489
+          lineNumber: 491
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(GridItemTitle, {
@@ -2525,7 +2529,7 @@ function (_Component) {
         mb: "24px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 490
+          lineNumber: 492
         },
         __self: this
       }, "Features for Growth"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(GridItemText, {
@@ -2538,26 +2542,26 @@ function (_Component) {
         mb: "24px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 500
+          lineNumber: 502
         },
         __self: this
       }, "Every day, hungry diners are looking at your menu, waiting to be converted. OurMenu gives you the perfect tools and expertise to make this happen.", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 510
+          lineNumber: 512
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 511
+          lineNumber: 513
         },
         __self: this
       }), "Target and engage diners right on your website with the OurMenu widget. Retain and grow your customer base with intelligent insights and social media integrations. All of this provided with our signature silver service approach makes OurMenu the perfect partner to drive your restaurant\u2019s growth.")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
         href: "/features",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 515
+          lineNumber: 517
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(GridItemButton, {
@@ -2575,7 +2579,7 @@ function (_Component) {
         fontWeight: "bold",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 516
+          lineNumber: 518
         },
         __self: this
       }, "See what sets us apart"))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(GridShowcase, {
@@ -2588,7 +2592,7 @@ function (_Component) {
         backgroundPosition: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 534
+          lineNumber: 536
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(GridItem, {
@@ -2598,7 +2602,7 @@ function (_Component) {
         bg: "black",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 544
+          lineNumber: 546
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(GridContent, {
@@ -2609,13 +2613,13 @@ function (_Component) {
         width: "50%",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 550
+          lineNumber: 552
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 557
+          lineNumber: 559
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(GridItemTitle, {
@@ -2627,7 +2631,7 @@ function (_Component) {
         mb: "24px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 558
+          lineNumber: 560
         },
         __self: this
       }, "The Silver Service Approach"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(GridItemText, {
@@ -2640,7 +2644,7 @@ function (_Component) {
         mb: "48px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 568
+          lineNumber: 570
         },
         __self: this
       }, "We are invested in your long-term growth. To accomplish this, we get to know every restaurant personally and understand their unique goals. Communication is key, so whether it\u2019s a feature request, support ticket, or adding a special to your menu, we\u2019re available over email, phone, text, Messenger, WhatsApp, and our hologram is coming soon.")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(GridItemButton, {
@@ -2659,13 +2663,13 @@ function (_Component) {
         href: "mailto:hello@ourmenu.co",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 581
+          lineNumber: 583
         },
         __self: this
       }, "See how fast we are")))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 601
+          lineNumber: 603
         },
         __self: this
       }));
