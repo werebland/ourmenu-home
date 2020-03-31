@@ -10,7 +10,7 @@
     "dotenv": "^8.0.0",
     "firebase": "^6.1.1",
     "firebase-admin": "^8.1.0",
-    "next": "^8.1.0",
+    "next": "^9.3.2",
     "re-base": "^4.0.0",
     "react": "^16.8.6",
     "react-animated-burgers": "^1.2.6",
